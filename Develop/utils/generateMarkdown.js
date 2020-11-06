@@ -1,6 +1,7 @@
 // function to generate markdown for README
-function generateMarkdown(response) {
+function generateMarkdown(response, badgeLicense) {
   return `# ${response.title}
+  
   ${badgeLicense}
 
   ## Description
@@ -28,10 +29,11 @@ function generateMarkdown(response) {
   ${response.test}
 
   ## Licenses
-  ${response.license}
+  This application is covered under the ${response.license} license.
 
-  ## Badges
-  ${response.license}
+  ## Questions?
+  * For any additional questions, please email me at: ${response.email}
+  * [GitHub](https://github.com/${response.username})
 
 
   © 2020 ${response.name} | UW-SEA-FSF-PT-08-2020-U-C-TTh
