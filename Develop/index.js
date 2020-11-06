@@ -53,7 +53,7 @@ function init() {
         .then(function(response) {
             console.log(response);
             let myHtmlDoc = generateMarkdown(response);
-            fs.writeFile("README.md", myHtmlDoc, function (err) {
+            fs.writeFile("../README.md", myHtmlDoc, function (err) {
                 if (err) {
                     return console.log(err);
                 }
