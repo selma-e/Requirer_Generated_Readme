@@ -1,6 +1,7 @@
 // function to generate markdown for README
 function generateMarkdown(response) {
-  return `#${response.title}
+  return `# ${response.title}
+  ${badgeLicense}
 
   ## Description
   ${response.description}
@@ -18,7 +19,7 @@ function generateMarkdown(response) {
   * If you need to pull my code for this homework, please visit my Github repository at: ${response.repository}
 
   ## Usage
-  <img src="./Assets/${response.usage}">
+  * If you need to see a video of this README Generator in action, please navigate to: ${response.usage} 
 
   ## Contributing
   ${response.contribution}
@@ -30,7 +31,8 @@ function generateMarkdown(response) {
   ${response.license}
 
   ## Badges
-  ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+  ${response.license}
+
 
   © 2020 ${response.name} | UW-SEA-FSF-PT-08-2020-U-C-TTh
 
